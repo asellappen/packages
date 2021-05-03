@@ -19,7 +19,7 @@ install :
   - sudo apt install m4 libpcre3-dev
   
 script :
-  - cd zimbra/apache-base
+  - cd zimbra/thirdparty/nginx/
   - make build
   - make all
   - ls -ltr build/UBUNTU16_64/
