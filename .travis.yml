@@ -10,7 +10,6 @@
 #
 # ----------------------------------------------------------------------------
 language: bash
-sudo : required
 
 arch:
     - amd64
@@ -20,7 +19,7 @@ install :
   - sudo apt install m4 libpcre3-dev
   
 script :
-  - cd packages/thirdparty/nginx
+  - cd zimbra/apache-base
   - make build
   - make all
   - ls -ltr build/UBUNTU16_64/
